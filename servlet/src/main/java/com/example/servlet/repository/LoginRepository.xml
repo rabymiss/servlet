@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.servlet.repository.LoginRepository">
+
+    <select id="findAll" parameterType="com.example.servlet.entity.JobMessage"
+            resultType="com.example.servlet.entity.JobMessage">
+        select    jobName,jobConditionOne,jobConditionTwo,cpnName,jobPay  from jobregister
+    </select>
+
+
+</mapper>

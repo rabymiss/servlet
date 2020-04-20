@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.servlet.repository.ResumeRepository">
+
+    <select id="findAll" parameterType="com.example.servlet.entity.ResumeEntity"
+            resultType="com.example.servlet.entity.ResumeEntity">
+        select    youname,birthday,politics,
+            email,phone,addressWork,ifMary,qwer,
+            teached,workming,showbyshelf  from resume
+    </select>
+
+
+</mapper>

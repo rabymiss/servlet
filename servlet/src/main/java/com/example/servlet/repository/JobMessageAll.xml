@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.servlet.repository.JobMessageAll">
+    <insert id="sava" parameterType="com.example.servlet.entity.MessageAll">
+        insert into job_message_all(jobName,cpnAddress,good1,good2,good3,good4,jobPay,conditionOne,conditionTwo,condition3,
+ workContent,workContentShow,Dizhi,workAddress,cpnImage,cpnName)  values (#{jobName},#{cpnAddress},#{good1},#{good2},#{good3},#{good4},#{jobPay}
+,#{conditionOne},#{conditionTwo},#{condition3},#{workContent},#{workContentShow},#{Dizhi},#{workAddress},#{cpnImage},#{cpnName})
+ </insert>
+    <select id="findAll" resultType="com.example.servlet.entity.MessageAll">
+        select  * from job_message_all
+    </select>
+</mapper>
